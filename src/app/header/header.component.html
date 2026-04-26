@@ -1,0 +1,24 @@
+<header class="w-100">
+
+  <div class="w-full d-flex justify-content-evenly">
+    <div *ngIf="auth.user | async as user" class="p-1 w-100 shadow-sm bg-dark">
+    <div class="align-self-start text-left d-inline-flex p-1 text-info">Hello {{ user.displayName }}!</div>
+    <a href="#" class="border-0 mx-2 px-2 text-danger d-inline-flex logout" (click)="logout()">Logout</a>
+    </div>
+  </div>
+
+    <div class="container-fluid d-flex flex-wrap justify-content-center align-content-center py-4 bg-dark p-4">
+      <a href="index.html" class="d-flex align-items-center me-lg-auto text-light text-decoration-none">
+        <h1 class="fancy-header text-xxl  align-self-baseline">
+          Fancy Mane <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-badge-tm" viewBox="0 0 16 16">
+            <path d="M5.295 11V5.995H7V5H2.403v.994h1.701V11h1.19zm3.397 0V7.01h.058l1.428 3.239h.773l1.42-3.24h.057V11H13.5V5.001h-1.2l-1.71 3.894h-.039l-1.71-3.894H7.634V11h1.06z"/>
+          </svg> 
+        </h1>
+      </a>
+      <h4 class="fs-6 align-self-center text-light-emphasis pt-2">Natural Soaps, Oils, and Conditioners for Equines.</h4>
+    </div>
+
+</header> 
+
+
+

@@ -1,0 +1,36 @@
+<div class="container-fluid">
+    <div class="container py-5">
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <!--Products -->
+        <div *ngFor="let product of products" class="text-xxl-start" label="product.label">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <img [src]="product.image" alt="{{ product.title }}" class="mx-auto rounded-top img-cards object-fit-fill w-100">
+            <div class="card-header py-3 bg-dark text-light">
+              <h5 class="my-0 fw-normal">{{ product.title }}</h5>
+            </div>
+            <div class="card-body">
+                <p class="ingredients">{{ product.description }}</p>
+
+                <div *ngIf="product.items">
+                  <p class="ingredients" *ngFor="let item of product.items | keyvalue">
+                    {{ item.value }}
+                  </p>
+                <p class="ingredients">{{ product.price | currency:'USD'}}</p>
+
+              <button type="button" class="w-full btn btn-md btn-outline-dark btn-light">More Info</button>
+              <button
+              type="button"
+              class="w-full btn btn-md btn-outline-dark btn-light"
+            (click)="addToCart(product)">
+              Add to Cart
+            </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</div>
+  </div>
+    </div>
+</div>

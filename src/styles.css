@@ -1,0 +1,187 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Gruppo&display=swap');
+
+html {
+    position: relative;
+    min-height: 100%;
+    padding-bottom:160px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  }
+  body {
+    margin-bottom: 160px;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 160px;
+  }
+
+.fancy-header{
+    font-family: 'Gruppo', cursive;
+    font-size: 3.6rem;
+    letter-spacing: -.05ch;
+}
+
+p.ingredients {
+    font-size: medium;
+    letter-spacing: 1.3px;
+    line-height: 28px;
+}
+h4.ingredients.fancy-header {
+    font-size: large;
+}
+
+.ingredient-col {
+    color:rgb(161, 35, 129);
+}
+
+.img-cards {
+    width: 350px;
+    height: 250px;
+}
+
+.ing-img-cards {
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+a {
+    color:rgb(35, 161, 161);
+    text-decoration: none;
+}
+
+.navbar {
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.navbar-toggler {
+    padding: unset;
+}
+
+.navbar-toggler:focus {
+    padding: unset;
+    text-decoration: none;
+    outline: 0;
+    box-shadow:unset;
+    padding: unset;
+}
+
+.navbar-toggler .collapsed {
+    padding: unset;
+    text-decoration: none;
+    outline: 0;
+    box-shadow:unset;
+    padding: unset;
+}
+
+.navbar a {
+    align-self: baseline;
+}
+
+.navbar a:hover {
+    color:rgb(35, 161, 161);
+}
+
+.nav-link a:active {
+    color:rgb(35, 161, 161);
+}
+
+.card-background-1 {
+    background-image: url('../src/assets/img/330px-Coconut_and_oil.jpg');
+    background-position: center;
+    background-size:auto;
+    width: auto;
+    height:fit-content
+}
+
+.card-background-2 {
+    background-image: url('../src/assets/img/soapbottle-andsoap.jpg');
+    background-position: bottom;
+    background-size: 50%;
+    width: auto;
+    height:fit-content
+}
+
+.card-background-3 {
+    background-image: url('../src/assets/img/barsoap.jpg');
+    background-position: center;
+    background-size: 50%;
+    width: auto;
+    height:fit-content
+}
+
+.carousel-img {
+  max-width: fit-content;
+  max-height: 500px;
+  margin: 0 auto;
+}
+
+h4.tagline {
+    align-self: center;
+    font-family:Arial Narrow, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 100;
+    color:rgb(35, 161, 161);
+}
+
+.hidden { 
+    visibility: hidden;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(85, 85, 85, 0.466);
+    overflow: hidden;
+}
+
+.min-h-50 {
+    min-height: 50vh;
+}
+
+@media (max-width: 1400px) {
+
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 990px) {
+    .fancy-header {
+        padding: .5rem
+    }
+    .search {
+        padding-bottom: 2rem;
+    }   
+
+}
+
+@media (max-width: 770px) {
+
+
+}
+
+@media (max-width: 576px) { 
+    .navbar-nav {
+        padding: 1rem 3.5rem;
+        position:absolute;
+        width:100%;
+        left: 0px;
+        top: 48px;
+    }
+    .carousel-img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+ }
+
+

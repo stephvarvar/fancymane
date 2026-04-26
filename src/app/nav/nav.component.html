@@ -1,0 +1,121 @@
+<!--nav---> 
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">FM</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <!--login / Logout-->
+          <div *ngIf="!isAuthenticated; else logoutMenu">
+            <li class="nav-item dropdown r-0">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Login
+              </a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" (click)="loginWithGoogle($event)">Login with <i class="bi bi-google"></i></a></li>
+                <li><a class="dropdown-item" href="#">Login with Account</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Register Account</a></li>
+              </ul>
+              </div>
+  
+              <ng-template #logoutMenu>
+               
+              </ng-template> 
+
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/products">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/ingredients">Ingredients</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/faqs">FAQ</a>
+          </li>        
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/cart">Cart<i class="bi bi-cart4 ps-1"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- <nav class="navbar navbar-expand-lg bg-body-tertiary z-3">
+  <div class="container-fluid">
+    <a class="navbar-brand align-self-center" href="#">FM</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active"  routerLink="/products">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/ingredients">Ingredients</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/faqs">FAQ</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        <ul class="navbar-nav text-end">
+          <li class="nav-item dropdown"  *ngIf="!(auth.isAuthenticated$ | async)">
+            <a class="nav-link dropdown-toggle"
+              href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Login
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" (click)="loginWithGoogle($event)">Login with <i class="bi bi-google"></i></a></li>
+              <li><a class="dropdown-item" href="#" (click)="openModal($event)">Login with Account</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#" (click)="openModal($event)">Register Account</a></li>
+            </ul>
+          </li>
+      </ul>
+      </span>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+<nav class="bg-light sticky-top border-bottom">
+
+  <div class="d-flex flex-row justify-content-around navbar-nav" id="nav">
+    <div class="p-2">
+      <a class="nav-link">Products</a>
+    </div>
+    <div class="p-2">
+      <a class="nav-link" >Ingredients</a>
+    </div>
+    <div class="p-2">
+      <a class="nav-link" routerLink="/gallery">Gallery</a>
+    </div>
+    <div class="p-2">
+      <a class="nav-link" routerLink="/store">Store</a>
+    </div>
+    <div class="p-2">
+      <a class="nav-link" >FAQ's</a>
+    </div>
+
+    
+  </div>
+
+  <div class="d-flex flex-row-reverse align-content-center">
+
+  </div>
+</nav>
+-->
+
+
+
